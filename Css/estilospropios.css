@@ -14,8 +14,6 @@
     scroll-behavior: smooth;
 }
 
-/* HEADER */
-
 .header {
     width: 100%;
     background: white;
@@ -149,6 +147,7 @@ section {
 
 .caja:hover {
     transform: translateY(-10px);
+    background-color: #cdcaca;
 }
 
 .caja i {
@@ -174,7 +173,7 @@ section {
     width: 80%;
 }
 
-.nosotros-text h3 {
+.nosotros-text h2 {
     font-size: 35px;
     color: #2196f3;
     margin-bottom: 20px;
@@ -306,3 +305,125 @@ footer {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .encabezado {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .logotipo {
+        font-size: 28px;
+    }
+
+    .links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .links a {
+        font-size: 14px;
+    }
+
+    .banner-principal {
+        height: auto;
+        min-height: 100vh;
+        padding: 120px 20px 80px;
+    }
+
+    .banner-principal-content h1 {
+        font-size: 40px;
+    }
+
+    .banner-principal-content p {
+        font-size: 18px;
+    }
+
+    .section {
+        padding: 60px 5%;
+    }
+
+    .seccion-titulo h2 {
+        font-size: 30px;
+    }
+
+    .nosotros-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .nosotros-content img {
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+    }
+
+    .nosotros-text h3 {
+        font-size: 28px;
+    }
+
+    .programar-citas form {
+        grid-template-columns: 1fr;
+    }
+
+    .servicios {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonios {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    .caja,
+    .testimoniol,
+    .contact-card {
+        padding: 25px;
+    }
+
+    .whatsapp {
+        width: 55px;
+        height: 55px;
+        font-size: 26px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .logotipo {
+        font-size: 24px;
+    }
+
+    .banner-principal-content h1 {
+        font-size: 32px;
+    }
+
+    .banner-principal-content p {
+        font-size: 16px;
+    }
+
+    .boton {
+        padding: 12px 25px;
+    }
+
+    .seccion-titulo h2 {
+        font-size: 26px;
+    }
+
+    .links {
+        gap: 10px;
+    }
+
+    .links a {
+        font-size: 13px;
+    }
+}
